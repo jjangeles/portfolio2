@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.home {
+	height: 100vh;
+	background-image: url(../images/index-bg.jpg);
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+.navbar {
+	background-color: rgba(20, 17, 16, .7);
+	border: 0;
+	margin: 0;
+}
+
+.namebar {
+	line-height: 0;
+}
+
+#main-content {
+	height: 50%;
+	border: 1px black solid;
+	background-color: rgba(20, 17, 16, .7);
+	border-radius: 10px;
+}
+
+main h2 {
+	text-align: center;
+}
+
+main p {
+	text-indent: 2em;
+}
+
+main h2,
+main p,
+.img-id {
+	position: relative;
+	top: -25%;
+}
