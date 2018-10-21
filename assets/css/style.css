@@ -43,3 +43,30 @@ main p,
 	position: relative;
 	top: -25%;
 }
+
+.nav > .nav-item > .nav-link {
+	color:  rgba(0, 255, 0, .6); 
+}
+
+.nav > .nav-item > .active {
+  color: black;
+  background-color: rgba(0, 255, 0, .6);    
+}
+
+.nav > .nav-item > .not-active:hover,
+.dropdown {
+	color:  rgba(0, 255, 0, 1); 
+}
+
+.nav > .nav-item > .active:hover {
+	background-color:  rgba(0, 255, 0, 1); 
+}
+
+.navbar-default .navbar-nav > .open > a {
+	background-color: rgba(0, 255, 0, .6); 
+}
+
+#dropdownMenuButton:hover {
+	 color: black;
+  	background-color: rgba(0, 255, 0, 1);    
+}
