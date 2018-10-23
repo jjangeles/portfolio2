@@ -82,6 +82,14 @@ main p,
 	margin-left: 10px;
 }
 
+.dropdown-menu {
+	background-color: rgba(20, 17, 16, .7);
+}
+
+.dropdown-item {
+	color:  rgba(0, 255, 0, .6); 
+}
+
 .nav > .nav-item > .active:hover {
 	background-color:  rgba(0, 255, 0, 1); 
 }
@@ -269,15 +277,17 @@ main p,
 
 	.web-image {
 		width: 190px;
-		height: 125px;
+		height: 130px;
 		position: relative;
-		top: -140px;
+		top: -145px;
 		left: 70px;
 		display: block;
 	}
 
 	.proj-img {
 		height: 300px;
+		float: left;
+		position: relative;
 	}
 
 	.space {
