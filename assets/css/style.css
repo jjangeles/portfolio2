@@ -70,7 +70,7 @@ html {
 #contact-scr {
 	width: 100%;
 	position: absolute;
-	top: 20%;
+	top: 18%;
 	display: none;
 }
 
@@ -387,10 +387,11 @@ main p,
 	font-size: 100px;
 	width: 100%;
 	position: absolute;
-	top: 0;
+	top: 50px;
 	margin-top: 50px;
 	text-align: center;
 	font-family: 'Rambla', sans-serif;
+	line-height: .5;
 }
 
 .clouds {
@@ -399,18 +400,30 @@ main p,
 }
 
 #c1 {
-	top: 300px;
+	top: 400px;
 	left: -10%;
 	z-index: 1;
 }
 
 #c2 {
-	top: 250px;
+	top: 300px;
 	left: 40%;
 	z-index: 1;
 }
 
 .clouds img {
+	width: 100%;
+}
+
+#dog {
+	width: 13%;
+	position: absolute;
+	top: 660px;
+	left: 60%;
+	/*z-index: 12;	*/
+}
+
+#dog img {
 	width: 100%;
 }
 
@@ -464,6 +477,17 @@ main p,
 		background-color: rgba(20, 17, 16, 1);
 	}
 */
+
+	#name {
+		font-size: 70px;
+		top: 50px;
+		height: 20%;
+	}
+
+	#dog {
+		top: 750px;
+	}
+
 	.navbar {
 		margin-top: 120vh;
 	}
@@ -485,6 +509,18 @@ main p,
 /*--------------------------------Mobile-----------------------------*/
 
 @media only screen and (max-width: 400px) {
+
+
+	#name {
+		font-size: 40px;
+		top: 50px;
+		height: 30%;
+	}
+
+	#dog {
+		left: 40%;
+		top: 550px;
+	}
 
 	#parallax #main {
 		height: 120vh;

@@ -47,7 +47,7 @@
 		    	<a id="contact-btn" class="nav-link not-active" href="#home" onclick="contactFunction()">Contact</a>
 		  	</li>
 		  	<li class="nav-item dropdown">
-		  		<button type="button" class="btn btn-outline-success dropdown-toggle not-active" id="dropdownMenuButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resume</button>
+		  		<button type="button" class="btn btn-outline-success dropdown-toggle not-active" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resume</button>
 		    	
 		    	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 		      		<a class="dropdown-item" href="assets/images/resume.pdf" target="_blank">View</a>
@@ -67,7 +67,7 @@
 				<div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
 					<img class="img-id rounded-circle mx-auto d-block" src="assets/images/mypic.jpg">
 					<h2 class="mt-3">John Jerome Angeles</h2>
-					<p class="mt-4">A full-stack web developer based in Pasig City and a graduate of Tuitt Coding Bootcamp. Specializing in creating responsive professional-looking websites. If you are looking for a cool website for your business or an employer looking for a talented web developer, you can get in touch with me <a class="contact-link" href="#home" onclick="contactFunction()">here</a>.</p>
+					<p class="mt-4">A full-stack web developer based in Pasig City and a graduate of Tuitt Coding Bootcamp. Specializing in creating responsive and professional-looking websites. If you are looking for a cool website for your business or an employer looking for a talented web developer, you can get in touch with me <a class="contact-link" href="#home" onclick="contactFunction()">here</a>.</p>
 				</div>
 
 			</main>
@@ -76,7 +76,7 @@
 				
 				<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 p-2">
 					<img src="assets/images/blank-scr.jpg">
-					<h2 class="text-center">ALL is SWELL</h2>
+					<h2 class="text-center">TideHunter</h2>
 					<p>This is a blog site created for surfers in the Philippines for them to share their surfing experiences. "ALL is SWELL" also provides real-time weather updates in the country and surf spot reviews to help you plan the next big attack. It also provides links to surfing tutorials to help beginners develop their skills.</p>
 				</div>
 
@@ -101,12 +101,16 @@
 
 	<div id="main" class="hideElement">
 		
-		<div id="name"><p>John Jerome Angeles</p></div>
+		<div id="name">
+			<p>Code Responsively</p>
+			<small>-John Jerome Angeles</small>
+		</div>
 
 		<div id=c1 class="clouds"><img src="assets/images/clouds.png"></div>
 		<div id=c2 class="clouds"><img src="assets/images/clouds.png"></div>
 
-		<div id="birds" ==><img src="assets/images/birds.png"></div>
+		<div id="birds"><img src="assets/images/birds.png"></div>
+		<div id="dog"><img id="dog-img" src="assets/images/dog.gif"></div>
 
 		<div id="mountain"><img src="assets/images/mountain.png"></div>
 
@@ -128,10 +132,10 @@
 		document.getElementById('main-content').className ='show-element';
 		$("#projects-scr").css("display", "block");
 
+		$(".nav-link.active").addClass("not-active");
+		$(".nav-link.active").removeClass("active");
 		$("#home-btn").addClass("active");
 		$("#home-btn").removeClass("not-active");
-		$("#projects-btn").removeClass("active");
-		$("#contact-btn").removeClass("active");
 	}
 
 	function projectsFunction(){
@@ -140,10 +144,10 @@
 		document.getElementById('projects-scr').className ='show-element';
 		$("#projects-scr").css("display", "block");
 
+		$(".nav-link.active").addClass("not-active");
+		$(".nav-link.active").removeClass("active");
 		$("#projects-btn").addClass("active");
 		$("#projects-btn").removeClass("not-active");
-		$("#home-btn").removeClass("active");
-		$("#contact-btn").removeClass("active");
 	}
 
 	function contactFunction(){
@@ -152,20 +156,22 @@
 		document.getElementById('contact-scr').className ='show-element';
 		$("#contact-scr").css("display", "block");
 
+		$(".nav-link.active").addClass("not-active");
+		$(".nav-link.active").removeClass("active");
 		$("#contact-btn").addClass("active");
 		$("#contact-btn").removeClass("not-active");
-		$("#home-btn").removeClass("active");
-		$("#projects-btn").removeClass("active");
 	}
 	
 	$(window).scroll(function(){ 
 		var scroll = $(this).scrollTop();
 
-		$("#name").css("transform", 'translate(0px,'+scroll/1.5+'%)');
+		$("#name").css("transform", 'translate(0px,'+scroll+'%)');
 		$("#mountain").css("transform", 'translate(-50%,'+scroll/1.5+'px)');
+		$("#dog").css("transform", 'translate(-50%,'+scroll/1.7+'px)');
 		$("#birds").css("transform", 'scale('+scroll/40+')');
 		// $("#birds").css("transform", 'translate(-'+scroll/2.5+'%, '+scroll/3+'%)'); cannot set two transform properties
 		$(".clouds").css("transform", 'translate(0px,-'+scroll/10+'%)');
+		$("#dog-img").attr("src", "assets/images/dog.gif");
 
 	});
 
