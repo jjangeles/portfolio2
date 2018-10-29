@@ -48,7 +48,6 @@ html {
   }
 }
 
-
 .hide-element {
   -webkit-animation-name: cssAnimation;
   -webkit-animation-duration:3s;
@@ -70,7 +69,7 @@ html {
 #contact-scr {
 	width: 100%;
 	position: absolute;
-	top: 18%;
+	top: 15vh;
 	display: none;
 }
 
@@ -257,108 +256,93 @@ main p,
 	color: #AD5C51;
 }
 
-/*Mobile Styles*/
-@media only screen and (max-width: 400px) {
+.nav > .nav-item > .not-active:hover {
+	color: black;
+		background-color: rgba(0, 255, 0, .6);
+}
 
-	.home {
-		padding-top: 170px;
-		width: auto;
-		height: 100vh;
-	}
+.navbar {
+	display: block;
+	margin: 0 auto;
+	background-color: rgba(20, 17, 16, 1);
+}
 
-	#projects {
-		height: auto;
-	}
+h2 {
+	font-size: 25px;
+}
 
-	.nav > .nav-item > .not-active:hover {
-		color: black;
-  		background-color: rgba(0, 255, 0, .6);
-	}
+.namebar p {
+	padding-left: 40px;
+}
 
-	.navbar {
-		display: block;
-		margin: 0 auto;
-		background-color: rgba(20, 17, 16, 1);
-	}
+.screen {
+	height: 150px;
+	display: block;
+}
 
-	.namebar h2 {
-		font-size: 25px;
-	}
+.web-image {
+	width: 190px;
+	height: 130px;
+	position: relative;
+	top: -145px;
+	left: 70px;
+	display: block;
+}
 
-	.namebar p {
-		padding-left: 40px;
-	}
+.proj-img {
+	height: 300px;
+	float: left;
+	position: relative;
+}
 
-	.screen {
-		height: 150px;
-		display: block;
-	}
+.space {
+	height: 0;
+}
 
-	.web-image {
-		width: 190px;
-		height: 130px;
-		position: relative;
-		top: -145px;
-		left: 70px;
-		display: block;
-	}
+.proj-text h2 {
+	margin-top: 5px;
+	text-align: center;
+}
 
-	.proj-img {
-		height: 300px;
-		float: left;
-		position: relative;
-	}
+.proj-text p {
+	font-size: 13px;
+	text-indent: 50px;
+}
 
-	.space {
-		height: 0;
-	}
+.project-btn {
+	font-size: 15px;
+}
 
-	.proj-text h2 {
-		margin-top: 5px;
-		text-align: center;
-	}
+.info {
+	height: 200px;
+	margin-top: 150px; 
+	color: white;
+	border: 1px solid white;
+	background-color: rgba(20, 17, 16, .7);
+	border-radius: 10px;
+	font-size: 1em;
+}
 
-	.proj-text p {
-		font-size: 13px;
-		text-indent: 50px;
-	}
+.info i {
+	font-size: 1em;
+	padding-left: 40px;
+}
 
-	.project-btn {
-		font-size: 15px;
-	}
+.btn-scroll {
+	display: none;
+}
 
-	.info {
-		height: 200px;
-		margin-top: 150px; 
-		color: white;
-		border: 1px solid white;
-		background-color: rgba(20, 17, 16, .7);
-		border-radius: 10px;
-		font-size: 1em;
-	}
+.nav-item {
+	width: 80px;
+}
 
-	.info i {
-		font-size: 1em;
-		padding-left: 40px;
-	}
+.dropdown {
+	margin-left: 0;
+}
 
-	.btn-scroll {
-		display: none;
-	}
-
-	.nav-item {
-		width: 80px;
-	}
-
-	.dropdown {
-		margin-left: 0;
-	}
-
-	.projects [class*="proj-"] {
-		/*border: 1px solid black;*/
-		max-height: 170px;
-	}
-
+.projects [class*="proj-"] {
+	/*border: 1px solid black;*/
+	max-height: 170px;
 }
 
 /*-------------------------------------------------------------------*/
@@ -374,7 +358,7 @@ main p,
 
 #parallax #main {
 	width: 95%;
-	height: 250vh;
+	height: 200vh;
 	background: linear-gradient(#66FFFD, #FFF);
 	position: absolute;
 	top: 0;
@@ -459,12 +443,12 @@ main p,
 }
 
 .navbar {
-	margin-top: 250vh;
+	margin-top: 200vh;
 }
 
 
 /*Tablet Styles*/
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 416px) and (max-width: 960px) {
 
 	/*.nav > .nav-item > .not-active:hover {
 		color: black;
@@ -494,6 +478,7 @@ main p,
 
 	#parallax #main {
 		height: 120vh;
+
 	}
 
 	#mountain {
@@ -508,7 +493,7 @@ main p,
 
 /*--------------------------------Mobile-----------------------------*/
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
 
 
 	#name {
@@ -519,7 +504,7 @@ main p,
 
 	#dog {
 		left: 40%;
-		top: 550px;
+		top: 85vh;
 	}
 
 	#parallax #main {
@@ -531,11 +516,20 @@ main p,
 	}
 
 	#mountain {
-		top: 500px;
+		top: 80vh;
 	}
 
 	#mountain img {
-		height: 200px;
+		height: 23vh;
+	}
+
+	.namebar h2 {
+		font-size: 6vw;
+	}
+
+	#parallax .navbar-toggler {
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	/*#main-content {
@@ -547,15 +541,16 @@ main p,
 	}*/
 
 	#main-content div {
-		height: 350px;
+		height: 50vh;
 		border: 1px black solid;
-		margin-top: 10vh;
+		margin-top: 30vh;
 		background-color: rgba(20, 17, 16, .7);
 		border-radius: 10px;
 	}
 
 	#contact-scr div {
 		height: auto;
+		margin-top: 10vh;
 	}
 
 }
